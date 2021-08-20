@@ -1,4 +1,4 @@
-;;; benchmark-init.el --- Benchmarks Emacs require and load calls
+;;; benchmark-init.el --- Benchmarks Emacs require and load calls  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013 Steve Purcell
 ;; Copyright (C) 2013-2014 David Holm
@@ -185,11 +185,6 @@ Slots:
   (interactive)
   (ad-activate 'require)
   (ad-activate 'load))
-
-;; Obsolete functions
-
-(define-obsolete-function-alias 'benchmark-init/install
-  'benchmark-init/activate)
 
 (provide 'benchmark-init)
 ;;; benchmark-init.el ends here
